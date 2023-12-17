@@ -1,0 +1,64 @@
+/* header {
+    background-image: linear-gradient(black, yellow) ;
+    height: 100px;
+    color: white;
+    position: relative;
+}
+
+div {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+} */
+
+/* header {
+    background-image: linear-gradient(black, yellow) ;
+    height: 100px;
+    color: white;
+    position: relative;
+}
+
+div {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+} */
+
+/* header {
+    background-image: linear-gradient(black, yellow) ;
+    height: 100px;
+    color: white;
+    position: relative;
+}
+
+div {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+} */
+
+/* header {
+    background-image: linear-gradient(black, yellow) ;
+    height: 100px;
+    color: white;
+    position: relative;
+}
+
+div {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+} */
+
+header {
+    background-image: linear-gradient(black, yellow) ;
+    height: 100px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
