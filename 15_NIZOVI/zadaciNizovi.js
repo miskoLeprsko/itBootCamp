@@ -276,3 +276,16 @@ console.log(promenaZnakaNepar(brojevi4))
 // let brojevi3 = [1, 2, 3, 4, 5, 6];
 // let brojevi4 = [1, 5, 9, 3];
 // let brojevi5 = [8, 6, 7, 8 , 5];
+
+function fibonacii() {
+    let f1 = 0;
+    let f2 = 1;
+
+    for (let i =  ; i <= 18; i++) {
+        let f = f1 + f2;
+        console.log(`${f}`);
+        f1 = f2;
+        f2 = f;
+    }
+}
+fibonacii();

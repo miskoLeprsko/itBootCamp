@@ -5,6 +5,7 @@ function ispisiDuzinuElemenata(niz) {
         var trenutniElement = niz[i];
         var duzinaElementa = 0;
 
+        
         for (var j = 0; j < trenutniElement.length; j++) {
             duzinaElementa++;
         }
@@ -20,10 +21,7 @@ ispisiDuzinuElemenata(nizStringova);
 // ZADATAK 20 Odrediti element u nizu stringova sa najvećom dužinom.
 
 function najduziElement(niz) {
-    if (niz.length === 0) {
-        console.log("Niz je prazan.");
-        return;
-    }
+
 
     var najduzi = niz[0];
 
@@ -45,10 +43,7 @@ najduziElement(nizStringova);
 //  ZADATAK 21 Odrediti broj elemenata u nizu stringova čija je dužina veća od prosečne dužine svih stringova u nizu.
 
 function brojElemenataDuzihOdProseka(niz) {
-    if (niz.length === 0) {
-        console.log("Niz je prazan.");
-        return;
-    }
+
 
     var sumaDuzina = 0;
 
@@ -75,10 +70,7 @@ brojElemenataDuzihOdProseka(nizStringova);
 // ZADATAK 22 Odrediti broj elemenata u nizu stringova koji sadrže slovo 'a’. 
 
 function brojElemenataSaSlovomA(niz) {
-    if (niz.length === 0) {
-        console.log("Niz je prazan.");
-        return;
-    }
+
 
     var brojElemenataSaA = 0;
 
@@ -102,10 +94,6 @@ brojElemenataSaSlovomA(nizStringova);
 
 // ZADATAK 23 
 function brojElemenataSaPocetnimSlovomA(niz) {
-    if (niz.length === 0) {
-        console.log("Niz je prazan.");
-        return;
-    }
 
     var brojElemenataSaA = 0;
 
@@ -124,4 +112,68 @@ function brojElemenataSaPocetnimSlovomA(niz) {
 var nizStringova = ["Aello", "World", "JavaScript", "OpenAI"];
 brojElemenataSaPocetnimSlovomA(nizStringova);
 
-// 
+//  24 zadatak da ti su nizovi
+function interleaveArrays(a, b) {
+    const n = a.length;
+    const c = [];
+
+    for (let i = 0; i < n; i++) {
+        c.push(a[i]);
+        c.push(b[i]);
+    }
+
+    return c;
+}
+
+// Example usage:
+// const c = [1, 2, 3];
+const b = ['a', 'b', 'c'];
+
+// const result = interleaveArrays(a, b);
+console.log(result);
+
+//zadata k 26
+function calculateBFromArrayA(a) {
+    const n = a.length / 2; // Assuming a.length is always even
+    const b = [];
+
+    for (let i = 0; i < n; i++) {
+        b.push((a[i] + a[2 * n - 1 - i]) / 2);
+    }
+
+    return b;
+}
+
+// Example usage:
+const a = [1, 2, 3, 4, 5, 6];
+const resultB = calculateBFromArrayA(a);
+console.log(resultB);
+
+function calculateFourthLegLength(firstLeg, secondLeg, thirdLeg) {
+    let fourthLeg;
+
+    // Check if the lengths are valid (non-negative)
+    if (firstLeg >= 0 && secondLeg >= 0 && thirdLeg >= 0) {
+        // Determine the length of the fourth leg
+        if (firstLeg > secondLeg && secondLeg > thirdLeg) {
+            fourthLeg = firstLeg - secondLeg;
+        } else if (secondLeg > thirdLeg) {
+            fourthLeg = secondLeg - thirdLeg;
+        } else {
+            fourthLeg = thirdLeg - secondLeg;
+        }
+    } else {
+        console.log("Invalid leg lengths. Please provide non-negative values.");
+    }
+
+    return fourthLeg;
+}
+
+// Example usage:
+const firstLegLength = 10;
+const secondLegLength = 8;
+const thirdLegLength = 6;
+
+const resultFourthLegLength = calculateFourthLegLength(firstLegLength, secondLegLength, thirdLegLength);
+console.log("Length of the fourth leg:", resultFourthLegLength);
+
