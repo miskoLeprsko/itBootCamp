@@ -1,0 +1,48 @@
+h1,h3 {
+    text-align: center;
+    color: rgb(85, 43, 123);
+}
+
+.dugme  {
+    display: inline-block;
+    color: white;
+    width: 23%;
+    background-color: rgb(85, 43, 123);
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.dugme:hover {
+    background-color: rgb(134, 102, 162);
+}
+
+section {
+
+    border: 1px solid black;
+}
+
+input {
+    /* margin-left: 30%;
+    margin-top: 20px;
+    height: 25px; */
+}
+
+.dugme2 {
+    background-color: rgb(85, 43, 123);
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.dugme2:hover {
+    background-color: rgb(134, 102, 162);
+}
+
+li {
+    text-align: center;
+}
+
+.dugmeZaBoju {
+    width: 50px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header>
+        <h1>ITBootcamp Chat</h1>
+        <h3>Choose a chatroom</h3>
+    </header>
+
+    <nav>
+        <span class="dugme" id="general">#general</span>
+        <span class="dugme" id="js">#js</span>
+        <span class="dugme" id="homeworks">#homeworks</span>
+        <span class="dugme" id="tests">#tests</span>
+    </nav>
+
+    <section>
+        <ul>
+            <!-- Ovde se nalaze poruke-->
+        </ul>
+    </section>
+
+    <input class="dugmeZaBoju"  type="color" id="boja">
+    <input class="dugme2" type="submit" value="Update Color" id="boja">
+
+    <br>
+
+    <textarea name="textarea" cols="30" rows="10" placeholder="Your message..." id="messageInput"></textarea>
+    <input type="submit"class="dugme2" value="Send" id="btnSend">
+
+    <br>
+
+    <input type="text" placeholder="Update username" id="updateInput">
+    <input type="submit"class="dugme2"value="Update" id="btnSend1">
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDZ_lDvi5FigXzKs-JxV_FiIt1xBVVa8Qs",
+            authDomain: "itbootcamp-be7b5.firebaseapp.com",
+            projectId: "itbootcamp-be7b5",
+            storageBucket: "itbootcamp-be7b5.appspot.com",
+            messagingSenderId: "203531589691",
+            appId: "1:203531589691:web:2240d9ff5d3f8bccb4e41e",
+            measurementId: "G-KMSWTFZKPG"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+    </script>
+
+    <script type="module" src="app.js" ></script>
+</body>
+</html>
